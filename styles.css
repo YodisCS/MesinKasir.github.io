@@ -1,0 +1,91 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background-image: linear-gradient(to bottom,#7CF5FF, #00CCDD, #4F75FF);
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  h1 {
+    margin-top: 40px;
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  #kasirForm {
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 7px;
+    background-color: transparent;
+    backdrop-filter: blur(55px);
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  #kasirForm label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  #kasirForm input[type="text"],
+  #kasirForm input[type="number"],
+  #kasirForm input[type="date"] {
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+  }
+  
+  #kasirForm button[type="submit"] {
+    background-color: #32cf38;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #kasirForm button[type="submit"]:hover {
+    background-color: #3e8e41;
+  }
+  
+  .popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.7); /* transparent background */
+    border: 1px solid #ddd;
+    padding: 20px;
+    display: none;
+  }
+  
+  .popup.show {
+    display: block;
+  }
+  
+  #popupMessage {
+    margin-bottom: 20px;
+  }
+  
+  #popup button {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #popup button:hover {
+    background-color: #3e8e41;
+  }
